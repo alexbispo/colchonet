@@ -20,4 +20,59 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  home:
+    index:
+      title: Recently posted Rooms
+  users:
+    new:
+      title: Register
+    edit:
+      title: Edit profile
+    show:
+      title: "Profile %{user_name}"
+      edit: Edit profile
+      location: "Location: %{location}"
+      bio: "Biography: %{bio}"
+  rooms:
+    show:
+      title: "Title: "
+      location: "Location: "
+      description: "Description: "
+      edit: Edit room
+    new:
+      title: New Room
+    edit:
+      title: Edit room
+    index:
+      title: Listing rooms
+      column:
+        title: Title
+        location: Location
+        description: Description
+      new: New room
+  links:
+    show: Details
+    back: Back
+    edit: Edit
+    destroy: Remove
+  layout:
+    rooms: Rooms
+    signup: Register
+  general:
+    form_error: There is errors in form, verify please.
+  activerecord:
+    models:
+      room: Room
+      user: User
+    attributes:
+      user:
+        bio: Biography
+        email: Email
+        full_name: Full name
+        location: Location
+        password: Password
+        password_confirmation: Password confirmation
+      room:
+        description: Description
+        location: Location
+        title: Title
