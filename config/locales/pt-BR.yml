@@ -1,4 +1,44 @@
 pt-BR:
+  home:
+    index:
+      title: Quartos recém postados
+  users:
+    new:
+      title: Cadastro
+    edit:
+      title: Editar perfil
+    show:
+      title: "Perfil %{user_name}"
+      edit: Editar perfil
+      location: "Localização: %{location}"
+      bio: "Biografia: %{bio}"
+  rooms:
+    show:
+      title: "Título: "
+      location: "Localização: "
+      description: "Descrição: "
+      edit: Editar quarto
+    new:
+      title: Novo Quarto
+    edit:
+      title: Editar quarto
+    index:
+      title: Listagem de quartos
+      column:
+        title: Título
+        location: Localização
+        description: Descrição
+      new: Novo quarto
+  links:
+    show: Detalhes
+    back: Voltar
+    edit: Editar
+    destroy: Remover
+  layout:
+    rooms: Quartos
+    signup: Cadastro
+  general:
+    form_error: Há erros no formulário, por favor verifique.
   activerecord:
     models:
       room: Quarto
