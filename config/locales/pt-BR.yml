@@ -12,6 +12,10 @@ pt-BR:
 
       confirm_link_html: 'Para você começar a usar o site, acesse o link %{link}'
       thanks_html: 'Obrigado por se cadastrar no %{link}.'
+  user_sessions:
+    new:
+      title: Login
+      sign_up: Cadastre-se
   home:
     index:
       title: Quartos recém postados
@@ -68,3 +72,15 @@ pt-BR:
         description: Descrição
         location: Localização
         title: Título
+  activemodel:
+    attributes:
+      user_session:
+        email: Email
+        password: Senha
+    errors:
+      messages:
+        invalid_login: Usuário ou senha inválidos
+  helpers:
+    submit:
+      user_session:
+        create: Entrar
