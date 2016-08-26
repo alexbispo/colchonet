@@ -1,5 +1,11 @@
 class User < ActiveRecord::Base
 
+	scope :confirmed, -> { where.not(confirmed_at: nil) }
+
+	def self.authenticate(email, password) 
+		user = confirmed.find_by(email: email).try(:authenticate, password)
+	end
+
 	EMAIL_REGEXP = /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
 
 	validates_presence_of :full_name, :email, :location

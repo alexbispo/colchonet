@@ -1,4 +1,7 @@
 pt-BR:
+  flash:
+    notice:
+      signed_in: Login efetuado com sucesso!
   confirmations:
     success: Email confirmado com sucesso, obrigado!
   signup:
